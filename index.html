@@ -1,47 +1,44 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Bilge Sahne</title>
-  <style>
-    body {
-      background-color: #e6f7ff;
-      text-align: center;
-      font-family: Arial, sans-serif;
-    }
-    #bilge {
-      width: 200px;
-      margin-top: 60px;
-      transition: transform 0.3s ease;
-    }
-    button {
-      margin-top: 30px;
-      padding: 12px 24px;
-      font-size: 18px;
-      background-color: #ffe600;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Bilge Sahneye Çıktı!</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            padding-top: 60px;
+        }
+        h1 {
+            color: #003366;
+        }
+        img {
+            width: 220px;
+            margin-top: 30px;
+            border-radius: 12px;
+        }
+        button {
+            margin-top: 40px;
+            padding: 12px 28px;
+            font-size: 18px;
+            border: none;
+            background-color: #ffe600;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-  <h1>Bilge Sahneye Çıktı!</h1>
-  <img src="bilge.png" alt="Bilge Karakteri" width="200" />
-  <img id="bilge" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/240px-User-avatar.svg.png" alt="Bilge Karakteri" />
-  <br />
-  <button onclick="bilgeSelam()">Bilge’ye Tıkla</button>
-
-  <script>
-    function bilgeSelam() {
-      const bilge = document.getElementById('bilge');
-      bilge.style.transform = "translateY(-20px)";
-      setTimeout(() => {
-        bilge.style.transform = "translateY(0px)";
-        alert("Merhaba kral! Ben Bilge!");
-      }, 300);
-    }
-  </script>
+    <h1>Bilge Sahneye Çıktı!</h1>
+    <img src="bilge-karakter.png" alt="Bilge Karakteri">
+    <br>
+    <button onclick="bilgeKonus()">Bilge’ye Tıkla</button>
+    <script>
+        function bilgeKonus() {
+            alert("Merhaba kral! Ben Bilge!");
+        }
+    </script>
 </body>
 </html>
